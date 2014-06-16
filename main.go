@@ -15,7 +15,7 @@ func main() {
 
 	var (
 		debug   = flag.Bool("debug", false, "if true, will print debug output to gol.log")
-		density = flag.Float64("density", 0.75, "a value between 0 and 1.0, the density of alive cells at the beginning")
+		density = flag.Float64("density", 0.50, "a value between 0 and 1.0, the density of alive cells at the beginning")
 		seed    = flag.Int64("seed", time.Now().UnixNano(), "seed for the random number generator")
 	)
 	flag.Parse()
