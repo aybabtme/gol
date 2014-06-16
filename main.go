@@ -143,17 +143,17 @@ func update(last, current [][]termbox.Cell) {
 }
 
 func isAlive(c termbox.Cell) bool {
-	return c.Fg == termbox.ColorWhite && c.Bg == termbox.ColorBlack
+	return c.Bg == termbox.ColorWhite && c.Fg == termbox.ColorBlack
 }
 
 func revive(c *termbox.Cell) {
-	c.Bg = termbox.ColorBlack
-	c.Fg = termbox.ColorWhite
+	c.Fg = termbox.ColorBlack
+	c.Bg = termbox.ColorWhite
 }
 
 func kill(c *termbox.Cell) {
-	c.Bg = termbox.ColorWhite
-	c.Fg = termbox.ColorBlack
+	c.Fg = termbox.ColorWhite
+	c.Bg = termbox.ColorBlack
 }
 
 func get(x, y int, b [][]termbox.Cell) (termbox.Cell, bool) {
